@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+/* === Fontes Personalizadas === */
+@font-face {
+  font-family: 'love_story';
+  src: url(../fonte/love_story.ttf);
+}
+
+/* === Variáveis === */
+:root {
+  --cor1: #e72f51;
+  --cor2: #c91221d2;
+  --cor3: #7a1225;
+  --cor4: #820029;
+  --cor5: #D9D7D7;
+
+  --font-amor: 'love_story', cursive;
+  --font-padrao: Arial, sans-serif;
+}
+
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* === Corpo da Página === */
+body {
+  background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+  font-family: var(--font-padrao);
+  text-align: justify;
+}
+
+/* === Cabeçalho === */
+header {
+  background-image: linear-gradient(to bottom, #f4eaeae0 10%, var(--cor2));
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+header h1 {
+  font-family: var(--font-amor);
+  color: #af1e36;
+  font-size: 3em;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+/* === Navegação === */
+nav {
+
+  background-color: var(--cor2);
+  padding: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+nav a {
+  color: white;
+  padding: 10px 10px 15px 10px;
+  font-weight: bold;
+  text-decoration: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+nav a:hover {
+  background-color: var(--cor3);
+  transition-duration: 0.8s;
+
+}
+
+/* === Conteúdo Principal === */
+main {
+  max-width: 880px;
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px 30px;
+}
+
+main h1 {
+  font-family: var(--font-amor);
+  color: #980140;
+}
+main h2{
+  font-family: var(--font-amor);
+   color: #b9044f;
+}
+
+main img.centro {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.6;
+  font-size: 1em;
+}
+main p{
+  text-indent: 30px;
+  line-height: 2em;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+aside{
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e72f51;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.388);
+}
+
+/* === Aside (opcional) === */
+aside h3 {
+  background-color: #c90040;
+  padding: 10px;
+  margin: -20px -20px -10px -20px;
+  border-radius: 5px 5px 0px 0px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+aside ul {
+  list-style-position: inside;
+  padding-top: 30px;
+  columns: 2;
+}
+
+/* === Rodapé === */
+footer {
+  background-color: #bd0039;
+  color: #ffffffcc;
+  text-align: center;
+  font-family: var(--font-padrao);
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  nav a {
+    /* display: block; */
+    margin: 8px;
+    font-size: 1.1em;
+    
+  }
+  nav a:hover{
+     transition-duration: 0.8s;
+  }
+
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 535px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  header p {
+    font-size: 0.9em;
+  }
+
+  nav {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  nav a {
+    font-size: 1em;
+    margin: 5px;
+   
+
+   
+  }
+  nav a:hover{
+    transition-duration: 0.8s;
+   
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
