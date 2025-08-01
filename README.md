@@ -1,4 +1,4 @@
-# html5css3
+# HTML5CSS3
 # Olá, eu sou o Hugo Gabriel! 👋
 
 💻 Desenvolvedor Full-Stack apaixonado por transformar ideias em soluções práticas.  
