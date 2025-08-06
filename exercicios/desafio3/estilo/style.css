@@ -55,22 +55,40 @@ section{
     font-family: var(--font3);
     font-size: 3vw;
 }
+section p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
 }
 section.imagem{
-    
+    color: rgb(255, 255, 255);
     background-color: rgb(68, 68, 68);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
+    background-attachment: fixed;
 
 }
 section.imagem > p{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.219);
+    background-color: rgba(0, 0, 0, 0.397);
     padding: 5px;
+     
 }
 footer{
     background-color: black;
     color: white;
     text-align: center;
     padding: 5px;
+}
+section#img1{
+    background-image: url(../imagens/joaninha.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: ;
+}
+section#img2{
+    background-image: url(../imagens/livro.jpg);
+    background-position: left center;
+    background-size: cover;
 }
