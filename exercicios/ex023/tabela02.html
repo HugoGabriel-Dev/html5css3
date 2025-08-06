@@ -8,17 +8,38 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td,th{
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(77, 77, 77);
             color: white;
         }
         td.num{
             text-align: right;
+        }
+        caption{
+            padding: 10px;
+            background-color: gray;
+            font-weight: bold;
+            border: 2px solid black;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            font-size: 1.5em;
+        }
+        th#tamanho{
+            width: 80px;
+        }
+        tbody> tr:nth-child(2n){
+           background-color: lightgray;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color:rgb(77, 77, 77);;
         }
     </style>
 </head>
@@ -26,9 +47,10 @@
 <!-- tabelas grandes
  
     Table
-        Thead   
-            Tbody
-                Tfoot
+        caption
+            Thead   
+               Tbody
+                    Tfoot
 
 
 -->
@@ -39,10 +61,13 @@
 <body>
     <h1>uso de tabelas maiores</h1>
     <table>
+        <caption>
+            TAXA POPULACIONAL / ESTADOS
+        </caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
+                <th scope="col">estado</th>
+                <th scope="col" id="tamanho">população</th>
             </tr>
         </thead>
             
@@ -50,17 +75,25 @@
             <tr>
                 <td>são paulo</td>
                 <td class="num">28 390 093</td>
-
+            </tr>
+             <tr>
+                <td>rio de janeiro</td>
+                <td class="num">11 210 093</td>
+            </tr>
+             <tr>
+                <td>pernambuco</td>
+                <td class="num">8 330 093</td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td class="num"><strong>0000</strong></td>
-            </tr>
-        </tfoot>
 
+            </tr>
+        </tfoot> 
     </table>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dignissimos voluptatem dicta, molestias distinctio voluptatibus doloremque tempore minus, odit eius et. Delectus harum illo minus dolorem, voluptatem eaque corrupti unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dignissimos velit molestias iste earum, eaque tempore ea commodi id nesciunt rem, dolor fugit unde perferendis est, dolorem eos recusandae saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet veniam quisquam, quod reiciendis placeat eligendi consectetur, error nobis impedit distinctio quidem esse perferendis quaerat voluptas, dolores perspiciatis neque suscipit repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio, provident soluta minus, minima quibusdam aut itaque perspiciatis facilis odit similique natus quia voluptatibus earum repellendus beatae ipsam inventore nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem voluptas dolore laboriosam repellendus, fugiat dolorem delectus ratione esse voluptatibus quia vel laborum mollitia excepturi exercitationem vero corrupti odio est officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem qui ducimus explicabo omnis commodi vitae aliquam et minima, neque pariatur accusantium iure quis officiis magni suscipit quos amet est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore veritatis velit iusto? Itaque repellat iure numquam! Molestias aliquid placeat suscipit labore laborum commodi necessitatibus voluptatibus, assumenda, quaerat adipisci facilis quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quod, vitae, ut voluptas recusandae qui eum autem pariatur officiis maiores beatae dignissimos, non et ea dicta voluptate porro quo voluptatum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ex saepe amet facilis, perspiciatis necessitatibus cupiditate voluptate error placeat culpa beatae. Iusto fugiat quos doloribus obcaecati esse sint pariatur assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, beatae hic obcaecati quibusdam repudiandae consequuntur earum facilis voluptate, rerum possimus quo assumenda in quas ratione ad minima? Voluptatibus, nesciunt eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perspiciatis quaerat recusandae consequatur explicabo id ex dolore cum culpa facere repellendus nesciunt voluptate, tempora voluptatem tenetur optio iure aliquid ipsa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione itaque dicta commodi, voluptate eos explicabo quam nemo ea delectus ex, voluptatem dolores porro libero cupiditate beatae laborum saepe deleniti animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error debitis ipsum delectus enim, illo reprehenderit! Quia deleniti voluptatibus ut voluptatem eos vel repellendus incidunt itaque at, nesciunt totam quod quae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quibusdam molestiae excepturi dolore, magnam optio harum vitae quas nostrum perspiciatis, nemo, aperiam fugiat quis molestias pariatur dolorem? Enim, mollitia quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, expedita vitae quis facere porro ad? Architecto modi facere blanditiis nulla excepturi. Cumque nam autem, sapiente quidem vero minus pariatur soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta expedita vero molestiae minima laborum, commodi tenetur possimus. Temporibus nemo accusamus vero dicta dolore, minus nobis magni distinctio voluptas 
 </body>
 </html>
