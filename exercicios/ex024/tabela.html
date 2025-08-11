@@ -11,13 +11,14 @@
         }
         table{
             border-collapse: collapse;
-            width: 500px;
+            width: 800px;
             text-align: center;
             border-bottom: 2px solid black;
+
         }
         td, th{
             border: 2.4px solid rgba(0, 0, 0, 0.419);
-            padding: 3px;  
+            padding: 6px;  
         }
         td{
             text-align: left;
@@ -25,57 +26,70 @@
         thead tr th{
             border-bottom: 2px solid black;
         }
+        #azul{
+            background-color: blue;
+        }
+        #container{
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">Grupos</th>
-                <th scope="col">Nomes</th>
-                <th colspan="3" scope="colgroup">Filmes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th rowspan="3" scope="rowgroup">mulheres</th>
-                <td>Ana Maria santos</td>
-                <td>alien</td>
-                <td>rambo</td>
-                <td>vingadores</td>
-            </tr>
-            <tr>
-                <td>beatriz souza</td>
-                <td>hulk</td>
-                <td>inception</td>
-                <td>batman</td>
-            </tr>
-            <tr>
-                <td>claudia melo</td>
-                <td>oblivion</td>
-                <td>matrix</td>
-                <td>big hero</td>
-            </tr>
-            <tr>
-                <th rowspan="3" scope="rowgroup">Homens</th>
-                <td>bruno mendonça</td>
-                <td>intocáveis</td>
-                <td>amnésia</td>
-                <td>gladiador</td>
-            </tr>
-            <tr>
-                <td>Daniel lourenço</td>
-                <td>wall-E</td>
-                <td>oldboy</td>
-                <td>dangai</td>
-            </tr>
-            <tr>
-                <td>fabiano mota</td>
-                <td>star wars 5</td>
-                <td>taxi driver</td>
-                <td>toy story</td>
-            </tr>
-        </tbody>
-    </table>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore quaerat nihil nemo corporis possimus, tenetur fuga aut rerum? Totam, vitae repellat ut sint nemo nisi odio voluptatibus asperiores distinctio.</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col>
+                <col id="azul">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Grupos</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">mulheres</th>
+                    <td>Ana Maria santos</td>
+                    <td>alien</td>
+                    <td>rambo</td>
+                    <td>vingadores</td>
+                </tr>
+                <tr>
+                    <td>beatriz souza</td>
+                    <td>hulk</td>
+                    <td>inception</td>
+                    <td>batman</td>
+                </tr>
+                <tr>
+                    <td>claudia melo</td>
+                    <td>oblivion</td>
+                    <td>matrix</td>
+                    <td>big hero</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>bruno mendonça</td>
+                    <td>intocáveis</td>
+                    <td>amnésia</td>
+                    <td>gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel lourenço</td>
+                    <td>wall-E</td>
+                    <td>oldboy</td>
+                    <td>dangai</td>
+                </tr>
+                <tr>
+                    <td>fabiano mota</td>
+                    <td>star wars 5</td>
+                    <td>taxi driver</td>
+                    <td>toy story</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
