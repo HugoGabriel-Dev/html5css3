@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>teste de formularios</h1>
+    <form action="#" autocomplete="on" method="post">
+        <p>
+            <label for="nome">Nome: </label> <input type="text" name="nome" id="nome" required placeholder="Digite seu nome" minlength="5" maxlength="15">
+        </p>
+        <p>
+            <label for="nota">Nota: </label> <input type="number" name="nota" id="nota" required placeholder="0 a 10" step="0.1" min="0" max="10" value="5">
+        </p>
+        <p>
+            <label for="Dia">Data da prova:</label> <input type="date" name="Dia" id="Dia" value="2025-08-15"> <br> <br>
+            <label for="time">Hora:</label> <input type="time" name="hora" id="hora" value="00:00">
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+    </form>
+</body>
+</html>
