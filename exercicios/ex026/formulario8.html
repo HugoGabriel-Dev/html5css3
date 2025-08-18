@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste output</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="#" method="get" autocomplete="on">
+
+        <p>
+            <label for="num1">Numero 1:</label>
+            <input type="number" name="num1" id="num1" max="100" oninput="soma.innerHTML=Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="num2">Numero 2:</label>
+            <input type="number" name="num2" id="num2" oninput="soma.innerHTML=Number(num2.value) + Number(num1.value)">
+        </p>
+        <p>
+            <label for="soma">Soma: </label>
+            <output id="soma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

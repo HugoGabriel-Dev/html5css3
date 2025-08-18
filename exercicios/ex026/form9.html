@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form action="#" method="post" autocomplete="on">
+
+        <p>
+            <label for="sats">Satisfação: </label>
+            <input type="range" name="sat" id="sats" oninput="nivel.innerHTML=Number(sats.value)" value="30">
+
+            <output id="nivel">30</output>
+        </p>
+
+    </form>
+</body>
+</html>
