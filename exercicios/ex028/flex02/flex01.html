@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container{
+            background-color: lightcoral;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.itens{
+            border: 1px solid black;
+            background-color: lightblue;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- obs: main-axis/cross-axis -->
+     <!-- flex-direction -- faz com que seja possivel o ajuste de direção do container -->
+    <!-- flex-wrap -- ajusta na hora que o container for quebrado pelo ajuste de tela na direçã odo cross-axis -->
+
+    <!-- 
+            flex-flow -- junção dos dois e abreviação fácil.
+    -->
+    <div class="container">
+        <div class="itens">examplo de bloco a</div>
+        <div class="itens">examplo de bloco b</div>
+        <div class="itens">examplo de bloco c</div>
+        <div class="itens">examplo de bloco d</div>
+        <div class="itens">examplo de bloco e</div>
+        <div class="itens">examplo de bloco f</div>
+        <div class="itens">examplo de bloco g</div>
+    </div>
+</body>
+</html>
