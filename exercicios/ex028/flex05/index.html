@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste com os filhos</title>
+    <style>
+        *{margin: 0px; padding: 0px;}
+
+        div.container{
+            background-color: lightblue;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.itens{
+            background-color: lightcoral;
+            border: 1px solid black;
+            padding: 30px;
+
+        }
+        div#l1{
+            order:3;
+        }
+        div#l2{
+            order: -1;
+        }        
+        div#l3{
+            order: 4;
+        }        
+        div#l4{
+            order: -6;
+        }        
+        div#l5{
+            order: 10;
+        }        
+        div#l6{
+            order: 2;
+        }        
+        div#l7{
+            order: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="itens" id="l1">a</div>
+        <div class="itens" id="l2">b</div>
+        <div class="itens" id="l3">c</div>
+        <div class="itens" id="l4">d</div>
+        <div class="itens" id="l5">e</div>
+        <div class="itens" id="l6">f</div>
+        <div class="itens" id="l7">g</div>
+    </div>
+</body>
+</html>
