@@ -7,22 +7,21 @@ div.conteiner{
 }
 .caixa1{
     background-color: red;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    grid-row: 1 / 2 ;
+    grid-column: 1 / span 4;
+    /* abreviação */
+    grid-area: 1 / 1 / 2 / span 4;
 }
 .caixa2{
-    background-color: aqua;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    background-color: aqua;    grid-row: 2 / 4;
+    grid-column: 1 / span 2;
+    /* abreviação */
+    grid-area: 2 / 1 / 4 / span 2;
 }
 .caixa3{
     background-color: blueviolet;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-row: 2 / 4;
+    grid-column: 3 / span 2;
+    /* abreviação */
+    grid-area: 2 / 3 / 4 / span 2;
 }
