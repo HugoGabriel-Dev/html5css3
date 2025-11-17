@@ -15,19 +15,27 @@ h1{
     font-size: 64px;
     font-weight: bold;
     font-family: "Unbounded", sans-serif;
-}
-
-p{
-    font-family: "poppins", sans-serif;
-    font-size: 24px;
+    margin-top: 60px;
 }
 
 h1 span{
     color: #9747FF;
 }
 
+h1, p{
+    text-align: center;
+}
+
+p{
+    font-family: "poppins", sans-serif;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
 a{
     color: #ffffff;
+    font-family: "poppins", sans-serif;
     font-size: 24px;
     text-decoration: none;
     background-color: #9747FF;
@@ -37,4 +45,67 @@ a{
     line-height: 66px;
     text-align: center;
     border-radius: 36px;
+    margin: 40px auto;
+}
+
+a:hover{
+    background-color: #8233E8;
+}
+
+.imgcelulares{
+    display: block;
+    margin: auto;
+    width: 792px;
+    height: 446px;
+}
+
+.logo{
+   display: block;
+   margin: 75px 0 0 300px;
+}
+
+@media (max-width: 800px){
+    .logo{
+        margin: 65px 0 0 45px;
+    }
+
+    h1{
+        display: block;
+        margin: 72px auto 0;
+    }
+
+    p{
+        display: block;
+        margin: 24px auto 40px;
+    }
+
+    .imgcelulares{
+        width: 659.5px;
+        display: block;
+        margin: 40px 54.5px 49px;
+    }
+}
+
+@media (max-width: 375px){
+    .logo{
+        margin: 32px 0 0 16px;
+    }
+
+    h1{
+        font-size: 40px;
+        display: block;
+        margin: 60px 17px 24px 17px;
+    }
+
+    p{
+        font-size: 20px;
+        width: 341px;
+    }
+
+    .imgcelulares{
+        width: 341px;
+        height: 230px;
+        margin: 40px auto ;
+    }
+
 }
