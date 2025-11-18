@@ -64,7 +64,7 @@ a:hover{
    margin: 75px 0 0 300px;
 }
 
-@media (max-width: 800px){
+@media screen and (max-width: 1100px){
     .logo{
         margin: 65px 0 0 45px;
     }
@@ -80,13 +80,14 @@ a:hover{
     }
 
     .imgcelulares{
-        width: 659.5px;
+        width: 800px;
+        height: 500px;
         display: block;
-        margin: 40px 54.5px 49px;
+        margin: 40px auto 49px;
     }
 }
 
-@media (max-width: 375px){
+@media screen and (max-width: 500px){
     .logo{
         margin: 32px 0 0 16px;
     }
