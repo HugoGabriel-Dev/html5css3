@@ -39,11 +39,11 @@
                 <legend>Perfil</legend>
                 <!-- Perfil -->
                 <p>Gênero:</p>
-                <input type="radio" name="userGender" id="userGender" value="Feminino">
+                <input type="radio" name="userGender" id="feminino" value="Feminino">
                 <label for="userGender">Feminino</label>
-                <input type="radio" name="userGender" id="userGender" value="Masculino">
+                <input type="radio" name="userGender" id="masculino" value="Masculino">
                 <label for="userGender">Masculino</label>
-                <input type="radio" name="userGender" id="userGender" value="prefiro não informar">
+                <input type="radio" name="userGender" id="naoinformado" value="prefiro não informar">
                 <label for="userGender">Prefiro não informar</label>
                 <br>
                 <label for="maritalStatus">Estado civil:</label>
@@ -93,15 +93,31 @@
             <fieldset>
                 <legend>Hábitos</legend>
                 <p>Redes sociais</p>
-                <input type="checkbox" name="userInstagram" id="instagram">
+                <input type="checkbox" name="social" id="instagram" value="instagram">
                 <label for="instagram">Instagram</label>
-                <input type="checkbox" name="userFacebook" id="facebook">
+                <br>
+                <input type="checkbox" name="social" id="facebook" value="facebook">
                 <label for="facebook">Facebook</label>
-                <input type="checkbox" name="userLinkedin" id="Linkedin">
+                <br>
+                <input type="checkbox" name="social" id="Linkedin" value="linkedin">
                 <label for="Linkedin">Linkedin</label>
-                <input type="checkbox" name="userx" id="x">
+                <br>
+                <input type="checkbox" name="social" id="x" value="x">
                 <label for="x">x</label>
+                <br>
+                <label for="musicStyle">Estilo Musical:</label>
+                <input list="styleTypes" type="text" name="musicType" id="musicStyle">
+                <datalist id="styleTypes">
+                    <option value="sertanejo">
+                    <option value="pop">
+                    <option value="rock">
+                    <option value="samba">
+                </datalist>
+                <br>
+                <label for="colors">Cor favorita</label>
+                <input type="color" name="favoriteColor" id="colors">
             </fieldset>
+            <hr>
             <button type="submit">Enviar</button>
         </form>
     </main>
