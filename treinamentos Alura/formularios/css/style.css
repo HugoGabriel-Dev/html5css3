@@ -29,11 +29,13 @@ form{
 
 label{
    display: inline-block;
-   padding-bottom: 5px
+   padding-bottom: 5px;
+   font-weight: bold;
 }
 
 p{
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 fieldset{
@@ -55,6 +57,7 @@ input, textarea , select{
     margin-bottom: 15px;
     border: 1px solid #cccccc;
     border-radius: 5px;
+    padding-left: 5px;
 }
 
 input#instagram, #facebook, #linkedin {
@@ -69,6 +72,34 @@ input[type="radio"]{
 input[type="color"]{
     width: 40px;
     padding: 0 2px;
+}
+
+input:invalid, textarea:invalid , select:invalid{
+    border-color: red;
+}
+
+input:valid, textarea:valid , select:valid{
+    border-color: green;
+}
+
+button{
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover{
+    background-color:rgba(255, 68, 0, 0.899);
+    color: #ffffff;
 }
 
 ::placeholder{

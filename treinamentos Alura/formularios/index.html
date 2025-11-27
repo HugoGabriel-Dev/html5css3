@@ -15,10 +15,10 @@
 <body>
     <main>
         <header>
-            <h1>Pesquisa Online</h1>
+            <h1>Pesquisa De Opnião</h1>
         </header>
         
-        <form action="" method="get">
+        <form action="pagina_teste.html" method="get">
 
             <fieldset>
                 <!-- Dados Pessoais -->
@@ -30,16 +30,16 @@
                 <input type="number" name="userAge" id="userAge" min="12" max="100" required placeholder="Idade">
                 <br>
                 <label for="userDate">Data de nascimento:</label>
-                <input type="date" name="userDate" id="userDate">
+                <input type="date" name="userDate" id="userDate" required>
                 <br>
                 <label for="userEmail">Email:</label>
                 <input type="email" name="userEmail" id="userEmail" required placeholder="ex: joao123@gmail.com">
                 <br>
                 <label for="userTell">Telefone:</label>
-                <input type="tel" name="userTell" id="userTell" pattern="[0-9]{11}" placeholder="(99)99999-9999">
+                <input type="tel" name="userTell" id="userTell" pattern="[0-9]{11}" placeholder="(99)99999-9999" required>
                 <br>
                 <label for="userImage">Upload de Fotos</label>
-                <input type="file" accept="image/*" name="userImage" id="userImage">
+                <input type="file" accept="image/*" name="userImage" id="userImage"  required>
                 <br>
             </fieldset>
             <br>
@@ -55,7 +55,7 @@
                 <label for="userGender">Prefiro não informar</label>
                 <br>
                 <label for="maritalStatus">Estado civil:</label>
-                <select name="maritalStatus" id="maritalStatus">
+                <select name="maritalStatus" id="maritalStatus" required>
                     <option value="">Selecione...</option>
                     <option value="casado">casado</option>
                     <option value="solteiro">solteiro</option>
@@ -64,7 +64,8 @@
                 </select>
                 <br>
                 <label for="userState">Estado:</label>
-                <select name="userState" id="userState">
+                <select name="userState" id="userState" required>
+                    <option value="">Selecione...</option>
                    <option value="acre"> Acre </option> 
                    <option value="alagoas"> Alagoas </option>
                    <option value="amapá"> Amapá </option>
@@ -114,7 +115,7 @@
                 <label for="x">x</label>
                 <br>
                 <label for="musicStyle">Estilo Musical:</label>
-                <input list="styleTypes" type="text" name="musicType" id="musicStyle">
+                <input list="styleTypes" type="text" name="musicType" id="musicStyle" required>
                 <datalist id="styleTypes">
                     <option value="sertanejo">
                     <option value="pop">
@@ -139,7 +140,7 @@
                 <label for="ruim">Ruim</label>
                 <br>
                 <label for="comments">Comentário:</label>
-                <textarea name="userComments" id="comments" placeholder="Deixe aqui seu comentário de avaliação!" cols="30" rows="3"></textarea>
+                <textarea name="userComments" id="comments" placeholder="Deixe aqui seu comentário de avaliação!" cols="30" rows="3" required></textarea>
             </fieldset>
             <br>
             <fieldset>
