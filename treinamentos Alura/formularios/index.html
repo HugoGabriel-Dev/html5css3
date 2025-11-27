@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+
     <title>Formularios</title>
 </head>
 <body>
-    <header>
-        <h1>Pesquisa de Dados</h1>
-    </header>
     <main>
+        <header>
+            <h1>Pesquisa Online</h1>
+        </header>
+        
         <form action="" method="get">
 
             <fieldset>
@@ -34,7 +42,7 @@
                 <input type="file" accept="image/*" name="userImage" id="userImage">
                 <br>
             </fieldset>
-            <hr>
+            <br>
             <fieldset>
                 <legend>Perfil</legend>
                 <!-- Perfil -->
@@ -89,17 +97,17 @@
                 <label for="userCity">Cidade:</label>
                 <input type="text" name="userCity" id="userCity" placeholder="Sua Cidade">
             </fieldset>
-            <hr>
+            <br>
             <fieldset>
                 <legend>Hábitos</legend>
-                <p>Redes sociais</p>
+                <p>Redes sociais:</p>
                 <input type="checkbox" name="social" id="instagram" value="instagram">
                 <label for="instagram">Instagram</label>
                 <br>
                 <input type="checkbox" name="social" id="facebook" value="facebook">
                 <label for="facebook">Facebook</label>
                 <br>
-                <input type="checkbox" name="social" id="Linkedin" value="linkedin">
+                <input type="checkbox" name="social" id="linkedin" value="linkedin">
                 <label for="Linkedin">Linkedin</label>
                 <br>
                 <input type="checkbox" name="social" id="x" value="x">
@@ -117,28 +125,29 @@
                 <label for="colors">Cor favorita</label>
                 <input type="color" name="favoriteColor" id="colors">
             </fieldset>
-            <hr>
+            <br>
             <fieldset>
                 <legend>Opnião</legend>
                 <p>Satisfação:</p>
-                <input type="checkbox" name="satisfaction" id="otima">
+                <input type="checkbox" name="satisfaction" id="otima" value="otima">
                 <label for="otima">Ótima</label>
-                <input type="checkbox" name="satisfaction" id="boa">
+                <input type="checkbox" name="satisfaction" id="boa" value="boa">
                 <label for="boa">Boa</label>
-                <input type="checkbox" name="satisfaction" id="regular">
+                <input type="checkbox" name="satisfaction" id="regular" value="regular">
                 <label for="regular">Regular</label>
-                <input type="checkbox" name="satisfaction" id="ruim">
+                <input type="checkbox" name="satisfaction" id="ruim" value="ruim">
                 <label for="ruim">Ruim</label>
                 <br>
                 <label for="comments">Comentário:</label>
                 <textarea name="userComments" id="comments" placeholder="Deixe aqui seu comentário de avaliação!" cols="30" rows="3"></textarea>
             </fieldset>
+            <br>
             <fieldset>
                 <legend>Confirmações</legend>
-                <input type="checkbox" name="userLgpd" id="termLgpd" value="accept">
+                <input type="checkbox" name="userLgpd" id="termLgpd" value="accept" required>
                 <label for="termLgpd">Eu aceito participar da pesquisa</label>
                 <br>
-                <input type="checkbox" name="userResult" id="userResultTerm" value="accept">
+                <input type="checkbox" name="userResult" id="userResultTerm" value="accept" required>
                 <label for="termLgpd">Desejo receber o resultado por Email</label>
             </fieldset>
             <button type="submit">Enviar</button>
