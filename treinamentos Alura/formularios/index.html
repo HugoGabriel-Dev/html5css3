@@ -15,7 +15,7 @@
 <body>
     <main>
         <header>
-            <h1>Pesquisa De Opnião</h1>
+            <h1 role="alert">Pesquisa De Opnião</h1>
         </header>
         
         <form action="pagina_teste.html" method="get">
@@ -36,10 +36,12 @@
                 <input type="email" name="userEmail" id="userEmail" required placeholder="ex: joao123@gmail.com">
                 <br>
                 <label for="userTell">Telefone:</label>
-                <input type="tel" name="userTell" id="userTell" pattern="[0-9]{11}" placeholder="(99)99999-9999" required>
+                <input type="tel" name="userTell" id="userTell" pattern="[0-9]{11}" placeholder="(99)99999-9999" required aria-describedby="ariaAcessibility">
+                <small id="ariaAcessibility">Digite 11 digitos, com DDD + número desejado</small>
                 <br>
                 <label for="userImage">Upload de Fotos</label>
-                <input type="file" accept="image/*" name="userImage" id="userImage"  required>
+                <input type="file" accept="image/*" name="userImage" id="userImage"  required aria-describedby="ariaFile">
+                <small id="ariaFile">Anexar foto desejada no campo acima</small>
                 <br>
             </fieldset>
             <br>
@@ -151,8 +153,8 @@
                 <input type="checkbox" name="userResult" id="userResultTerm" value="accept" required>
                 <label for="termLgpd">Desejo receber o resultado por Email</label>
             </fieldset>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+            <button type="submit" aria-label="enviar dados do formulario">Enviar</button>
+            <button type="reset" aria-label="limpar dados do formulario">Limpar</button>
         </form>
     </main>
 </body>
