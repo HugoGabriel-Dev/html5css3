@@ -74,6 +74,17 @@ input[type="color"]{
     padding: 0 2px;
 }
 
+input[type="tel"],
+input[type="file"]{
+    margin-bottom: 0px;
+}
+
+small{
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-left: 3px;
+}
+
 input:invalid, textarea:invalid , select:invalid{
     border-color: red;
 }
